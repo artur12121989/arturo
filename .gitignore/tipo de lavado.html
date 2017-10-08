@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>TIPO DE LAVADO</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="livevalidation_standalone.compressed.js"></script>
+	</head>
+	<body>
+	<center>
+<table width="220" border="0" cellspaciong="0" cellpadigding="1">
+<tr bgcolor="#990033" align="center">
+
+    	<td><b><font color="blue"> <h2>TIPO DE LAVADO</h2></font></b></td> 
+</tr>
+		<form action="validar.php" method = "post">
+     
+<tr bgcolor="#990033">
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr bgcolor="#FFFFFF">
+<td>
+   	
+lavado de motor: <input id="f1" type="text" name="lavadodemotor" /><br />
+			<script type="text/javascript">
+  				var f1 = new LiveValidation('f1');
+  				f1.add(Validate.Presence, {failureMessage: "Escribir por favor tu Login!!!"});
+			</script>             		
+    		lavado de vestidura: <input id="f2" type="text" name="lavadodevestidura" /><br />
+			<script type="text/javascript">
+  				var f2 = new LiveValidation('f2');
+  				f2.add(Validate.Presence, {failureMessage: "Escribir por favor tu Password!!!"});
+			</script>             		
+    		lavado normal: <input id="f3" type="text" name="lavadonormal" /><br />
+			<script type="text/javascript">
+  				var f3 = new LiveValidation('f3');
+  				f3.add(Validate.Presence, {failureMessage: "Escribir por favor tu Nombre!!!"});
+			</script> 
+			encerado: <input id="f4" type="text" name="encerado" /><br />
+			<script type="text/javascript">
+  				var f4 = new LiveValidation('f4');
+  				f4.add(Validate.Presence, {failureMessage: "Escribir por favor tipo de auto!!!"});
+			</script>             		
+    	    tipo de auto: <input id="f5" type="text" name="tipodeauto" />
+			<script type="text/javascript">
+				var f5 = new LiveValidation('f5');
+				f5.add(Validate.Presence, {failureMessage: "Escribir por favor tu telefono"});
+			</script> 
+			            		
+			<br /><input type="submit" value="Enviar"/>
+</td>
+</tr>
+</center>
+</table>
+</td>
+</tr>
+</table>
+    	</form>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>REGISTRO DE CLIENTE</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="livevalidation_standalone.compressed.js"></script>
+	</head>
+	<body>
+	<center>
+<table width="220" border="0" cellspaciong="0" cellpadigding="1">
+<tr bgcolor="#990033" align="center">
+
+    	<td><b><font color="blue"> <h2>cliente de car wash</h2></font></b></td>
+</tr>
+		<form action="valid.php" method = "post">
+     
+<tr bgcolor="#990033">
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr bgcolor="#FFFFFF">
+<td>
+   	
+nombre: <input id="f1" type="text" name="nombre" /><br />
+			<script type="text/javascript">
+  				var f1 = new LiveValidation('f1');
+  				f1.add(Validate.Presence, {failureMessage: "Escribir por favor tu Login!!!"});
+			</script>             		
+    		apellido: <input id="f2" type="text" name="apellido" /><br />
+			<script type="text/javascript">
+  				var f2 = new LiveValidation('f2');
+  				f2.add(Validate.Presence, {failureMessage: "Escribir por favor tu Password!!!"});
+			</script>             		
+    		turno: <input id="f3" type="text" name="turno" /><br />
+			<script type="text/javascript">
+  				var f3 = new LiveValidation('f3');
+  				f3.add(Validate.Presence, {failureMessage: "Escribir por favor tu Nombre!!!"});
+			</script> 
+			auto: <input id="f4" type="text" name="auto" /><br />
+			<script type="text/javascript">
+  				var f4 = new LiveValidation('f4');
+  				f4.add(Validate.Presence, {failureMessage: "Escribir por favor tipo de auto!!!"});
+			</script>             		
+    	    telefono: <input id="f5" type="text" name="telefono" />
+			<script type="text/javascript">
+				var f5 = new LiveValidation('f5');
+				f5.add(Validate.Presence, {failureMessage: "Escribir por favor tu telefono"});
+			</script> 
+			direccion: <input id="f6" type="text" name="direccion" /><br />
+			<script type="text/javascript">
+  				var f6 = new LiveValidation('f6');
+  				f6.add(Validate.Presence, {failureMessage: "Escribir por favor tu direccion!!!"});
+			</script>             		
+			<br /><input type="submit" value="Enviar"/>
+</td>
+</tr>
+</center>
+</table>
+</td>
+</tr>
+</table>
+    	</form>
+	</body>
+</html>
